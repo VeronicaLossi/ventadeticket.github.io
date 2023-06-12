@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Tickets</title>
+    <link rel="icon" type="image/ico" href="Imagenes/favicon.ico">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-izquierda">
+            <h1>Conf Bs As</h1>
+        </div>
+        <nav class="header-derecha">
+            <ul>
+                <li>
+                    <b>La conferencia</b>
+                </li>
+                <li>
+                    <a href=".#Oradores">Los Oradores</a>
+                </li>
+                <li>El Luga y la fecha</li>
+                <li>
+                    <a href=".#Formulario">Conviértete en orador</a>
+                </li>
+                <li id="tickets1">
+                    <a href="./tickets.html">Comprar tickets</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="cuerpoTickets">
+        <section class="categorias">
+            <div class="estudiante">
+                <p>Estudiante</p>
+                <p>Tiene un descuento</p>
+                <p>80%</p>
+                <p>* presentar documentación</p>
+            </div>
+            <div class="trainee">
+                <p>Trainee</p>
+                <p>Tiene un descuento</p>
+                <p>50%</p>
+                <p>* presentar documentación</p>
+            </div>
+            <div class="junior">
+                <p>Junior</p>
+                <p>Tiene un descuento</p>
+                <p>15%</p>
+                <p>* presentar documentación</p>
+            </div>
+        </section>
+
+        <h4>VENTA</h4>
+        <H1>VALOR DE TICKETS $200 </H1>
+        <form action="datos.html" target="-blank">
+            <input type="text" name="Nombre" id="campo1" required placeholder="Nombre">
+            <input type="text" name="Apellido" id="campo2" required placeholder="Apellido"> <br>
+            <input type="text" name="Correo" id="campo4" required placeholder="Correo">
+        </form>
+            <br><br>
+        <form id="calcularTotal" method="post" class="p-5">
+            <div class="row">
+                <div class="col p-l" id="cantCat">
+                    <label for="cantidad">Cantidad</label><br>
+                    <input type="number" name="cantidad" id="cantidad" nim=0 required placeholder="Cantidad">
+                </div>
+
+                <div class="col p-l" id="cantCat">
+                    <label for="categoria">Categoria</label><br>
+                    <select name="categoria" id="categoria">
+                        <option value="estudiante">Estudiante</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="junior">Junior</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="alert alert-primary text-start mt-2 total" name="calcularTotal" id="total">Total a pagar $</div>
+            <br><br>
+            <div class="compra">
+                <div class="col p-1">
+                    <button type="reset" id="borrar" class="btn btn-success w-100"
+                        style="background-color:rgb(107, 208, 7) ; border-color: rgb(84, 161, 7);">Borrar</button>
+                </div>
+                <div class="col p-1">
+                    <button type="submit" id="resumen" class="btn btn-success w-100"
+                        style="background-color:rgb(107, 208, 7) ; border-color: rgb(84, 161, 7);">Total</button>
+                </div>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Contáctanos</a></li>
+                <li><a href="#">Prensa</a></li>
+                <li><a href="#">Conferencias</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Estudiantes</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BA</title>
+    <link rel="icon" type="image/ico" href="Imagenes/favicon.ico">
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-izquierda">
+            <img src="Imagenes/codoacodo.png" alt="Logo de Codo a Codo">
+            <h1>Conf Bs As</h1>
+        </div>
+        <nav class="header-derecha">
+            <ul>
+                <li>
+                    <b>La conferencia</b>
+                </li>
+                <li>
+                    <a href="#Oradores">Los Oradores</a>
+                </li>
+                <li>El Luga y la fecha</li>
+                <li>
+                    <a href="#Formulario">Conviértete en orador</a>
+                </li>
+                <li id="tickets1">
+                    <a href="tikects.html">Comprar tickets</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="bloque1">
+            <br><br><br><br><br><br><br><br>
+            <h2>Conf Bs As</h2>
+            <p class="bloque">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el
+                conocimiento y experiancia de los expertos que están creando el futuro de Internet. Ven a conocer a
+                miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel para ti. Te
+                esperamos!</p>
+            <a class="botonOrador" href="#Formulario">Quiero ser orador</a> <button id="tickets">Comprar
+                Tickets</button>
+        </section>
+
+        <section id="Oradores">
+            <h6>CONOCE A LOS</h6>
+            <h3>ORADORES</h3>
+            <table>
+                <tr>
+                    <td><img src="Imagenes/steve.jpg" alt="Foto de Steve Jobs" width="250px"></td>
+                    <td><img src="Imagenes/bill.jpg" alt="Foto de Bill Gates" width=243px"></td>
+                    <td><img src="Imagenes/ada.jpeg" alt="Foto de Ada Lovelace" width="243px"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Imagenes/JS y React.PNG" alt="Logo de JavaScript y React" width="30%">
+                        <h3>Steve Jobs</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, ducimus. Magni fuga assumenda
+                            cum nam, perferendis quod sunt! Neque eius repellendus impedit delectus aperiam? Quidem
+                            officiis voluptatibus non sint eum.</p>
+                    </td>
+                    <td>
+                        <img src="Imagenes/JS y React.PNG" alt="Logo de JavaScript y React" width="30%">
+                        <h3>Bill Gates</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi exercitationem, molestiae
+                            unde minus iure maxime esse distinctio autem inventore. Eius quod repudiandae dolor rem nisi
+                            ea laborum doloribus nulla officia!</p>
+                    </td>
+                    <td>
+                        <img src="Imagenes/JS y React.PNG" alt="Logo de JavaScript y React" width="30%">
+                        <h3>Ada Lovelance</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nesciunt, ab pariatur
+                            doloremque accusantium dolore similique magnam obcaecati alias laborum harum quod hic quis
+                            fuga magni quam earum neque ducimus!</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <span class="inline">
+                <img src="Imagenes/honolulu.jpg" alt="Se muestra paisaje una playa de Honolulu" width="100%">
+            </span>
+            <span class="inline">
+                <h2>Bs As - Octubre</h2>
+                <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados
+                    Unidos.
+                    Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de
+                    Honolulu se refiere al área urbana en la costa sureste de la sla de Oahu, la ciudad y el condado
+                    de
+                    Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente
+                    600
+                    km2 de superficie).</p>
+                <button>Conocé más</button>
+            </span>
+        </section>
+        <section class="Formulario">
+            <h6 id="Formulario">CONVIÉRTETE EN UN</h6>
+            <h3>ORADOR</h3>
+            <P>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</P>
+
+            <form action="datos.html" target="-blank">
+                <input type="text" name="Nombre" id="campo1" required placeholder="Nombre">
+                <input type="text" name="Apellido" id="campo2" required placeholder="Apellido">
+
+                <br><br>
+                <textarea name="tema" id="campo3" size="46" cols="46" rows="4" required
+                    placeholder="Sobre qué querés hablar?"></textarea>
+                <p>Recuerda incluir un título para tu charla</p>
+                <input id="enviar" type="submit" value="Enviar">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Contáctanos</a></li>
+                <li><a href="#">Prensa</a></li>
+                <li><a href="#">Conferencias</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Estudiantes</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
